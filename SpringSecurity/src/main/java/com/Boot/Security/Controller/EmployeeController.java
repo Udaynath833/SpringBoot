@@ -18,7 +18,7 @@ public class EmployeeController {
 	}
 	
 	@PreAuthorize("hasRole('ADMIN')")
-	@GetMapping("/admin")
+	@GetMapping("/admin1")
 	public ResponseEntity<String> adminUser() {
 		return ResponseEntity.ok("Am a admin user");
 	}
